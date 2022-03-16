@@ -271,6 +271,7 @@ footer {
   background-color: var(--secondary);
   width: 12rem;
   height: 4rem;
+  margin-top: 1rem;
 }
 
 .SoMe,
@@ -300,10 +301,11 @@ footer {
   margin-bottom: 4rem;
 }
 
-.intro_forside p {
+.intro_forside li {
   margin-top: 0px;
   margin-bottom: 0px;
   color: var(--primary);
+  list-style: none;
 }
 
 .intro_forside a {
@@ -386,31 +388,50 @@ footer {
 
 /*** LILLE TABLET ***/
 @media (min-width: 640px) {
-  /**** generelt ***/
+  /**** GENERELT ***/
   .main {
     padding-inline: 2rem;
   }
 
-  /*  .......... Nav ......... */
+  /*** NAV ***/
   nav {
     justify-content: space-between;
   }
 
-  /* FOOTER */
+  /*** FOOTER ***/
   .footer_SoMe {
     gap: 1.5rem;
   }
 
-  /*** KONTAKT ***/
+  /*** FORSIDE ***/
+  .gul_boks {
+    width: 35rem;
+  }
+
+  .orange_boks {
+    width: 17rem;
+  }
+
+  .hvid_boks_grid {
+    margin-left: 23rem;
+  }
+
+  .tre_genveje_forside {
+    justify-content: space-evenly;
+  }
+
+  /**** ABOUT ***/
+  /**** WORK ***/
+  /* CONTACT - INGEN RETTELSER */
 }
 
 @media (max-width: 768px) {
-  /**** generelt ***/
+  /**** GENERELT ***/
   .main {
     padding-inline: 2rem;
   }
 
-  /*  .......... Nav ......... */
+  /*** NAV ***/
   .nav_links {
     position: absolute;
     right: 0px;
@@ -435,8 +456,6 @@ footer {
 
   .burger {
     display: block;
-    /* margin-top: 10px;
-  margin-left: 10px; */
   }
 
   /*  .......... Burgermenu toggle former sig om X......... */
@@ -448,9 +467,11 @@ footer {
   .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
   }
+
   .toggle .line2 {
     opacity: 0;
   }
+
   .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
   }
@@ -461,25 +482,33 @@ footer {
     transform: translateY(-3px);
     transition: all 0.3s;
   }
+
   .hover .line2 {
     opacity: 0;
     transition: all 0.3s;
   }
+
   .hover .line3 {
     transform: translateY(3px);
     transition: all 0.3s;
   }
+
+  /**** FOOTER ***/
+  /**** FORSIDE ***/
+  /**** ABOUT ***/
+  /**** WORK ***/
+  /* CONTACT - INGEN RETTELSER */
 }
 
 /*** TABLET ***/
 @media (min-width: 768px) {
-  /**** generelt ***/
+  /**** GENERELT ***/
   .main {
     padding-inline: 4rem;
     padding-block: 2rem;
   }
 
-  /**** nav ****/
+  /**** NAV ****/
   .tre_menupunkter a {
     color: var(--primary);
   }
@@ -490,12 +519,32 @@ footer {
   }
 
   /*** FORSIDE ***/
+  .hvid_boks li:hover {
+    scale: 1.1;
+  }
+
+  .intro_forside li:hover {
+    scale: 1.1;
+  }
+
   .tre_genveje_forside a:hover {
     text-decoration: underline;
   }
 
   .tre_genveje_forside li:hover {
     scale: 1.1;
+  }
+
+  .gul_boks {
+    width: 39rem;
+  }
+
+  .hvid_boks_grid {
+    margin-left: 27rem;
+  }
+
+  .tre_genveje_forside {
+    margin-top: 2rem;
   }
 
   /*** ABOUT ***/
@@ -532,7 +581,7 @@ footer {
     display: block;
   } */
 
-  /*** KONTAKT ***/
+  /*** CONTACT ***/
   .praktikant_tekst {
     display: flex;
     gap: 4rem;
@@ -553,41 +602,94 @@ footer {
 
 /*** LILLE DEKSTOP ***/
 @media (min-width: 1024px) {
-  /**** generelt ***/
+  /**** GENERELT ***/
   .main {
     padding-inline: 6rem;
     padding-block: 4rem;
   }
 
+  /**** NAV ***/
   header {
     margin-top: 2rem;
     margin-inline: 4rem;
   }
 
+  /**** FOOTER ***/
   footer {
     margin-inline: 4rem;
   }
+
+  /**** FORSIDE ***/
+  .gul_boks {
+    width: 58rem;
+    margin-top: 0rem;
+  }
+
+  .hvid_boks {
+    width: 18rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+
+  .hvid_boks_grid {
+    margin-left: 40rem;
+  }
+
+  .mig_img {
+    place-self: end center;
+    margin-left: -8rem;
+  }
+
+  .portfolio_titel {
+    text-align: start;
+    margin-top: 10rem;
+    margin-left: 2rem;
+  }
+
+  .navn_hero {
+    rotate: 0deg;
+    place-self: center;
+    margin-left: 25rem;
+    margin-bottom: 17rem;
+  }
+
+  /**** ABOUT ***/
+  /**** CONTACT ***/
+  /**** WORK ***/
 }
 
 /*** STOR DESKTOP ***/
 @media (min-width: 1280px) {
-  /**** generelt ***/
+  /**** GENERELT ***/
   .main {
     padding-inline: 8rem;
   }
 
+  /**** NAV ***/
   header {
     margin-top: 2rem;
     margin-inline: 4rem;
   }
-
-  /* KONTAKT - INGEN RETTELSER */
+  /**** FOOTER ***/
+  /**** FORSIDE ***/
+  /**** ABOUT ***/
+  /**** WORK ***/
+  /* CONTACT - INGEN RETTELSER */
 }
 
 /*** EKSTRASTOR DESKTOP ***/
 @media (min-width: 1536px) {
-  /**** generelt ***/
+  /**** GENERELT ***/
   .main {
     padding-inline: 10rem;
   }
+
+  /**** NAV ***/
+  /**** FOOTER ***/
+  /**** FORSIDE ***/
+  /**** ABOUT ***/
+  /**** WORK ***/
+  /* CONTACT - INGEN RETTELSER */
 }
