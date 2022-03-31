@@ -408,6 +408,7 @@ footer {
 
 .img_about {
   margin-block: 1rem 2rem;
+  box-shadow: 0 8px 10px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
 }
 
 .cv_her_link {
@@ -438,6 +439,10 @@ footer {
 /*** WORK ***/
 figure {
   margin-inline: 0rem;
+}
+
+.projekter_wrapper img {
+  box-shadow: 0 8px 10px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
 }
 
 .projekter_wrapper .boks {
@@ -917,10 +922,15 @@ figure {
     width: 100%;
     height: 100%;
     opacity: 1;
-    border: 1px white solid;
+  }
+
+  .projekter_wrapper img {
+    box-shadow: 0 8px 10px -1px rgb(0 0 0 / 0), 0 2px 4px -2px rgb(0 0 0 / 0);
   }
 
   .fade_in_1 {
+    box-shadow: 0 8px 10px -1px rgb(0 0 0 / 0.3),
+      0 2px 4px -2px rgb(0 0 0 / 0.3);
     -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
     animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
   }
@@ -955,28 +965,38 @@ figure {
   }
 
   .fade_in_2 {
+    box-shadow: 0 8px 10px -1px rgb(0 0 0 / 0.3),
+      0 2px 4px -2px rgb(0 0 0 / 0.3);
     -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s
       both;
     animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s both;
   }
 
   .fade_in_3 {
+    box-shadow: 0 8px 10px -1px rgb(0 0 0 / 0.3),
+      0 2px 4px -2px rgb(0 0 0 / 0.3);
     -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
     animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
   }
 
   .fade_in_4 {
+    box-shadow: 0 8px 10px -1px rgb(0 0 0 / 0.3),
+      0 2px 4px -2px rgb(0 0 0 / 0.3);
     -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 2.5s
       both;
     animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 2.5s both;
   }
 
   .fade_in_5 {
+    box-shadow: 0 8px 10px -1px rgb(0 0 0 / 0.3),
+      0 2px 4px -2px rgb(0 0 0 / 0.3);
     -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 3s both;
     animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 3s both;
   }
 
   .fade_in_6 {
+    box-shadow: 0 8px 10px -1px rgb(0 0 0 / 0.3),
+      0 2px 4px -2px rgb(0 0 0 / 0.3);
     -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 3.5s
       both;
     animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 3.5s both;
