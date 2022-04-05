@@ -1,7 +1,12 @@
-let skelet = document.querySelector("body");
-
 window.addEventListener("load", animation);
 
 function animation() {
-  skelet.classList.add("loaded");
+  const skelet = document.querySelector("body");
+
+  if (!sessionStorage.getItem("isLoaded")) {
+    skelet.classList.add("loaded");
+    sessionStorage.setItem("isLoaded", true);
+  } else {
+    skelet.classList.add("no-load");
+  }
 }

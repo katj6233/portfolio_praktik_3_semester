@@ -14,13 +14,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <body class="index_loader">
     <div id="loader-wrapper">
       <div id="loader"></div>
 
       <div class="loader-section section-left"></div>
       <div class="loader-section section-right"></div>
     </div>
+
+
+
 
     <!-- header -->
     <header>
@@ -29,9 +32,9 @@
           <h3><a href="index.html">KATJA LEVRING</a></h3>
         </div>
         <ul class="tre_menupunkter nav_links">
-          <li><a class="work_menupunkt" href="work.html">work</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="kontakt.html">contact</a></li>
+          <li><a class="work_menupunkt" href="index.html#work">work</a></li>
+          <li><a href="index.html#about">about</a></li>
+          <li><a href="index.html#contact">contact</a></li>
         </ul>
         <!-- burger menu som ses i mobil -->
         <div class="burger">
@@ -41,9 +44,15 @@
         </div>
       </nav>
     </header>
+
+
+
+
+
     <!-- main -->
     <main class="main">
-      <!-- hero -->
+
+      <!-- hero sektion -->
       <section>
         <div class="hero_images">
           <div class="gul_boks"></div>
@@ -72,6 +81,7 @@
         </div>
       </section>
 
+      <!-- velkommen sektion -->
       <section id="velkommen">
         <div class="streg_efter_tekst">
           <h1>welcome</h1>
@@ -90,13 +100,259 @@
             hvis jeg vækker en interesse hos jer!
           </p>
         </div>
-        <!-- <ul class="tre_genveje_forside">
-          <li><a href="work.html">work</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="kontakt.html">contact</a></li>
-        </ul> -->
       </section>
+
+      <!-- WORK -->
+      <!-- work sektion -->
+      <section id="work">
+        <div class="streg_efter_tekst">
+          <h1>work</h1>
+          <img class="streg_img" src="img/streg.svg" alt="" />
+        </div>
+        <p class="p_intro">
+          Dette er et udpluk af nogle af de projekter som jeg har lavet under
+          min uddannelse på KEA.
+        </p>
+      </section>
+
+      <section class="projekter_wrapper">
+        <!-- Teater Grob -->
+        <div class="boks">
+          <figure class="image_boks fade_in_1">
+            <div class="image_overlay slide-in-fwd-center">
+              <h2 class="overskrift_boks">Teater Grob</h2>
+              <div class="kompetencer_boks">
+                <p>Videoproduktion</p>
+                <p>Målgruppeanalywe</p>
+                <p>CMS-system</p>
+              </div>
+              <a class="link_boks" href=""><h3>Se projekt her</h3></a>
+            </div>
+            <img class="image" src="img/grob.png" alt="" />
+          </figure>
+        </div>
+
+        <!-- MBN -->
+        <div class="boks">
+          <figure class="image_boks fade_in_2">
+            <div class="image_overlay slide-in-fwd-center">
+              <h2 class="overskrift_boks">Made By Nicholas</h2>
+              <div class="kompetencer_boks">
+                <p>WP REST API</p>
+                <p>SEO</p>
+                <p>SoMe content</p>
+              </div>
+              <a class="link_boks" href=""><h3>Se projekt her</h3></a>
+            </div>
+            <img class="image" src="img/mbn.png" alt="" />
+          </figure>
+        </div>
+
+        <!-- Musikloftet -->
+        <div class="boks">
+          <figure class="image_boks fade_in_3">
+            <div class="image_overlay slide-in-fwd-center">
+              <h2 class="overskrift_boks">Musikloftet</h2>
+              <div class="kompetencer_boks">
+                <p>Framework</p>
+                <p>Tailwind CSS</p>
+                <p>User testing</p>
+              </div>
+              <a class="link_boks" href=""><h3>Se projekt her</h3></a>
+            </div>
+            <img class="image" src="img/musikloftet.png" alt="" />
+          </figure>
+        </div>
+
+        <!-- Typografi -->
+        <div class="boks">
+          <figure class="image_boks fade_in_4">
+            <div class="image_overlay slide-in-fwd-center">
+              <h2 class="overskrift_boks">En Kant</h2>
+              <div class="kompetencer_boks">
+                <p>Typografiproces</p>
+                <p>Illustrator</p>
+                <p>Figma</p>
+              </div>
+              <a class="link_boks" href=""><h3>Se projekt her</h3></a>
+            </div>
+            <img class="image" src="img/plakat-4.png" alt="" />
+          </figure>
+        </div>
+
+        <!-- Tidligere portfolio -->
+        <div class="boks">
+          <figure class="image_boks fade_in_5">
+            <div class="image_overlay slide-in-fwd-center">
+              <h2 class="overskrift_boks">Tdiligere Portfolio</h2>
+              <div class="kompetencer_boks">
+                <p>Eksamensprojekt</p>
+                <p>Designproces</p>
+                <p>Copy</p>
+              </div>
+              <a class="link_boks" href=""><h3>Se projekt her</h3></a>
+            </div>
+            <img class="image" src="img/portfolio.png" alt="" />
+          </figure>
+        </div>
+
+        <!-- Animationsspil -->
+        <div class="boks">
+          <figure class="image_boks fade_in_6">
+            <div class="image_overlay slide-in-fwd-center">
+              <h2 class="overskrift_boks">Animationsspil</h2>
+              <div class="kompetencer_boks">
+                <p>JavaScript</p>
+                <p>Kodet spil</p>
+                <p>Figurdesign</p>
+              </div>
+              <a class="link_boks" href=""><h3>Se projekt her</h3></a>
+            </div>
+            <img class="image" src="img/animation.png" alt="" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <!-- about sektion -->
+      <section id="about">
+        <div class="streg_efter_tekst">
+          <h1>about</h1>
+          <img class="streg_img" src="img/streg.svg" alt="" />
+        </div>
+            
+            <div class="about_grid">
+              <div>
+            <h2>Hej! Jeg hedder Katja</h2>
+            <p>
+              Sidder du med følelsen af at du lige har set portfolioet på jeres
+              nye praktikant og at jeg ville passe godt ind i jeres team? Så tøv
+              endelig ikke med at kontakt mig! Mine kontaktoplysninger er som
+              vist ude til højre, så hvis du sidder med nogle ubesvarede
+              spørgsmål eller en interesse, så kontakt mig enten på min mail
+              eller telefonisk. Jeg håber meget på at høre fra dig!
+            </p>
+          </div>
+            <img class="img_about" src="img/about_mig.png" alt="Billede af mig">
+          </div>
+        </div>
+      </section>
+
+      <!-- kompetence sektion -->
+      <section class="kompetence_section">
+        <div class="streg_efter_tekst">
+          <h2 class="speciel_h2">skills</h2>
+          <img class="streg_img" src="img/streg.svg" alt="" />
+        </div>
+        <div class="en_to_tre_kompetencer">
+          <div class="slide-in-fwd-center_1">
+            <h2 class="tal_about">01</h2>
+            <h3>Interfacedesign</h3>
+            <ul class="ul_about">
+              <li>Designsystemer</li>
+              <li>UX & UI design</li>
+              <li>Redesigns</li>
+              <li>Onepagers, landingpages, microsites</li>
+              <li>Responsivt design</li>
+              <li>User testing</li>
+            </ul>
+          </div>
+
+          <div class="slide-in-fwd-center_2">
+            <h2 class="tal_about">02</h2>
+            <h3>Design udvikling</h3>
+            <ul class="ul_about">
+              <li>Kode ved brug af HTML, CSS, JavaScript, Tailwind og Svelte</li>
+              <li>Adobe Creative Cloud: Illustrator, InDesign, Xd, Photoshop og Premiere Pro</li>
+              <li>Prototype, wireframe, mockup, moodboard og styletile</li>
+              <li>Figma</li>
+              <li>Brug af JSON</li>
+              <li>CMS-system: WordPress</li>
+              <li>Video og billede udvikling og redigering</li>
+            </ul>
+          </div>
+
+          <div class="slide-in-fwd-center_3">
+            <h2 class="tal_about">03</h2>
+            <h3>Kommunikation</h3>
+            <ul class="ul_about">
+              <li>Informationsartitektur og systemer</li>
+              <li>Infografik</li>
+              <li>Kundesegmenter</li>
+              <li>Customer Journey</li>
+              <li>SEO</li>
+              <li>Annoncering</li>
+            </ul>
+          </div>
+
+          <div class="slide-in-fwd-center_4">
+            <h2 class="tal_about">04</h2>
+            <h3>Projektstyrelse</h3>
+            <ul class="ul_about">
+              <li>Scrum</li>
+              <li>Trello</li>
+              <li>Design Thinking</li>
+              <li>Double Diamond</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- cv sektion -->
+      <section>
+        <div class="streg_efter_tekst">
+          <h2 class="speciel_h2">resume</h2>
+          <img class="streg_img" src="img/streg.svg" alt="" />
+        </div>
+        <p>
+          Du kan downloade mit CV
+          <a class="cv_her_link" href="kontakt.html" target="_blank">her.</a>
+        </p>
+      </section>
+
+      <!-- CONTACT -->
+      <!-- contact sektion -->
+      <section id="contact">
+        <div class="streg_efter_tekst">
+          <h1>contact</h1>
+          <img class="streg_img" src="img/streg.svg" alt="" />
+        </div>
+
+        <div class="praktikant_tekst">
+          <div>
+            <h2>Kunne jeg måske være jeres nye praktikant?</h2>
+            <p>
+              Sidder du med følelsen af at du lige har set portfolioet på jeres
+              nye praktikant og at jeg ville passe godt ind i jeres team? Så tøv
+              endelig ikke med at kontakt mig! Mine kontaktoplysninger er som
+              vist ude til højre, så hvis du sidder med nogle ubesvarede
+              spørgsmål eller en interesse, så kontakt mig enten på min mail
+              eller telefonisk. Jeg håber meget på at høre fra dig!
+            </p>
+          </div>
+
+          <div class="mail_mobil_div">
+            <div>
+              <h3>E-mail</h3>
+              <p>
+                <a href="mailto:someone@example.com">katjakl@msn.com</a>
+              </p>
+            </div>
+
+            <div>
+              <h3>Mobilnummer</h3>
+              <p>+45 30 27 79 27</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
+
+
+
+
     <!-- footer -->
     <footer id="footer">
       <section class="footer_section">
@@ -130,6 +386,11 @@
         </div>
       </section>
     </footer>
+
+
+
+
+
     <!-- script -->
     <script src="script/main.js"></script>
     <script src="script/generelt.js"></script>
