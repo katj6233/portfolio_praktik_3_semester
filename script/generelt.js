@@ -1,18 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
-
-// Scroll animationer
-function scrollAnimationer() {
-  gsap.from("#work", {
-    ScrollTrigger: "#work",
-    y: "20rem",
-    duration: 0.9,
-    ease: Cubic.easeOut,
-    stagger: { amount: 0.5, from: "edges" },
-  });
-}
-
-scrollAnimationer();
-
 // Lytter efter om alt DOM indhold er loaded ind
 
 window.addEventListener("DOMContentLoaded", start);
