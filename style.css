@@ -39,54 +39,6 @@ video {
   height: auto;
 }
 
-/********** POP UP ************/
-.modal {
-  /* padding: 1em; */
-  max-width: 50ch;
-  border: 0;
-  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
-}
-
-.modal::backdrop {
-  background: rgb(0 0 0 / 0.6);
-}
-
-.open-button,
-.open-button-1,
-.open-button-2,
-.open-button-3,
-.open-button-4,
-.open-button-5 {
-  color: var(--secondary);
-  cursor: pointer;
-}
-
-.open-button:hover,
-.open-button-1:hover,
-.open-button-2:hover,
-.open-button-3:hover,
-.open-button-4:hover,
-.open-button-5:hover {
-  text-decoration: underline;
-}
-
-.close-button,
-.close-button-1,
-.close-button-2,
-.close-button-3,
-.close-button-4,
-.close-button-5 {
-  background-color: white;
-  border: none;
-  cursor: pointer;
-  text-align: end;
-}
-
-.kryds_titel_luk {
-  display: flex;
-  justify-content: space-between;
-}
-
 /*** FONTE ***/
 h1 {
   font-family: var(--h1Text);
@@ -157,8 +109,54 @@ li {
 }
 
 /*** GENERELT I MOBILE ***/
-.main {
-  padding-inline: var(--space-xxl);
+.main,
+#work,
+#about,
+#contact {
+  margin-top: 4rem;
+}
+
+/********** POP UP ************/
+.modal {
+  /* padding: 1em; */
+  max-width: 50ch;
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+}
+.modal::backdrop {
+  background: rgb(0 0 0 / 0.6);
+}
+.open-button,
+.open-button-1,
+.open-button-2,
+.open-button-3,
+.open-button-4,
+.open-button-5 {
+  color: var(--secondary);
+  cursor: pointer;
+}
+.open-button:hover,
+.open-button-1:hover,
+.open-button-2:hover,
+.open-button-3:hover,
+.open-button-4:hover,
+.open-button-5:hover {
+  text-decoration: underline;
+}
+.close-button,
+.close-button-1,
+.close-button-2,
+.close-button-3,
+.close-button-4,
+.close-button-5 {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  text-align: end;
+}
+.kryds_titel_luk {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*** HEADER MENU I MOBILE ***/
@@ -234,7 +232,6 @@ footer {
   margin-top: 4rem;
   margin-inline: 2rem;
 }
-
 .footer_section,
 .footer_SoMe,
 .footer_div {
@@ -244,26 +241,21 @@ footer {
   justify-content: space-between;
   margin-block: 1rem;
 }
-
 .footer_div {
   gap: 1.5rem;
   padding-left: 0px;
 }
-
 .footer_div li {
   list-style: none;
 }
-
 .footer_SoMe {
   margin-top: 0.6rem;
   gap: 0.4rem;
 }
-
 .footer_div a {
   text-decoration: none;
   color: black;
 }
-
 .footer_div a:hover {
   text-decoration-line: underline;
 }
@@ -282,6 +274,7 @@ footer {
   margin-top: 8rem;
 }
 
+/* animationer i mobile er hurtigere end i desk pga preload */
 .gul_boks {
   -webkit-animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
   animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
@@ -431,22 +424,45 @@ footer {
   color: var(--primary);
 }
 
-.tre_genveje_forside {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 0px;
+/*** WORK ***/
+figure {
+  display: grid;
+  margin: 0rem;
 }
 
-.tre_genveje_forside li {
-  list-style: none;
-  transition: all ease-in 0.1s;
+.image {
+  grid-area: 1/1;
 }
 
-.tre_genveje_forside a {
-  text-decoration: none;
-  color: var(--primary);
-  letter-spacing: 0.125rem;
-  font-weight: bold;
+.image_overlay {
+  grid-area: 1/1;
+  text-align: center;
+  display: grid;
+  place-content: center;
+}
+
+/* figure {
+  margin-inline: 0rem;
+} */
+
+.projekter_wrapper img {
+  box-shadow: 0 8px 10px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+}
+
+.projekter_wrapper .boks {
+  margin-block: 3rem;
+}
+
+.overskrift_boks {
+  margin-bottom: 0rem;
+}
+
+.kompetencer_boks {
+  margin-block: 1rem;
+}
+
+.kompetencer_boks p {
+  line-height: 1rem;
 }
 
 /*** ABOUT ***/
@@ -482,36 +498,6 @@ footer {
 .mail_mobil_div {
   display: flex;
   gap: 3rem;
-}
-
-/*** WORK ***/
-#work,
-#about,
-#contact {
-  margin-top: 4rem;
-}
-figure {
-  margin-inline: 0rem;
-}
-
-.projekter_wrapper img {
-  box-shadow: 0 8px 10px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
-}
-
-.projekter_wrapper .boks {
-  margin-block: 3rem;
-}
-
-.overskrift_boks {
-  margin-bottom: 0rem;
-}
-
-.kompetencer_boks {
-  margin-block: 1rem;
-}
-
-.kompetencer_boks p {
-  line-height: 1rem;
 }
 
 /*** LILLE TABLET ***/
