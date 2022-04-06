@@ -2,7 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Scroll animationer
 function scrollAnimationer() {
-  console.log("hej");
+  // console.log("det virker");
   gsap.from(".projekter_wrapper", {
     ScrollTrigger: ".projekter_wrapper",
     y: "20rem",
