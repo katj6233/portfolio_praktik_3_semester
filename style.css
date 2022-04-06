@@ -39,6 +39,54 @@ video {
   height: auto;
 }
 
+/********** POP UP ************/
+.modal {
+  /* padding: 1em; */
+  max-width: 50ch;
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+}
+
+.modal::backdrop {
+  background: rgb(0 0 0 / 0.6);
+}
+
+.open-button,
+.open-button-1,
+.open-button-2,
+.open-button-3,
+.open-button-4,
+.open-button-5 {
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.open-button:hover,
+.open-button-1:hover,
+.open-button-2:hover,
+.open-button-3:hover,
+.open-button-4:hover,
+.open-button-5:hover {
+  text-decoration: underline;
+}
+
+.close-button,
+.close-button-1,
+.close-button-2,
+.close-button-3,
+.close-button-4,
+.close-button-5 {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  text-align: end;
+}
+
+.kryds_titel_luk {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*** FONTE ***/
 h1 {
   font-family: var(--h1Text);
@@ -110,7 +158,7 @@ li {
 
 /*** GENERELT I MOBILE ***/
 .main {
-  padding-inline: 2rem;
+  padding-inline: var(--space-xxl);
 }
 
 /*** HEADER MENU I MOBILE ***/
