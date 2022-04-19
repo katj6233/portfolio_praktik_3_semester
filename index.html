@@ -15,9 +15,6 @@
   </head>
 
   <body>
-
-
-
     <!-- preloader -->
     <div id="loader-wrapper">
       <div id="loader"></div>
@@ -25,9 +22,6 @@
       <div class="loader-section section-left"></div>
       <div class="loader-section section-right"></div>
     </div>
-
-
-
 
     <!-- navigation -->
     <header>
@@ -49,21 +43,16 @@
       </nav>
     </header>
 
-
-
-
-
     <!-- main -->
     <main class="main">
-
       <!-- hero sektion -->
       <section>
         <div class="hero_images">
           <div class="gul_boks"></div>
           <div class="orange_boks"></div>
           <div class="portfolio_titel">
-            <p>PORT</p>
-            <p>FOLIO</p>
+            <h1>PORT</h1>
+            <h1>FOLIO</h1>
           </div>
           <img class="mig_img" src="img/hero_mig.png" alt="Billede af mig" />
           <p class="navn_hero">Katja Kurz Levring</p>
@@ -79,7 +68,9 @@
           </div>
 
           <div class="intro_forside">
-            <h3>Spirrende multimediedesigner søger praktiksted!</h3>
+            <h2 class="spirrende_h2">
+              Spirrende multimediedesigner søger praktiksted!
+            </h2>
             <p><a href="index.html#velkommen">Dyk ned i mit univers</a></p>
           </div>
         </div>
@@ -88,20 +79,23 @@
       <!-- velkommen sektion -->
       <section id="velkommen">
         <div class="streg_efter_tekst">
-          <h1>welcome</h1>
+          <h2 class="welcome_overskrift">welcome</h2>
           <img class="streg_img" src="img/streg.svg" alt="" />
         </div>
-        <div>
+        <h3>Velkommen til min portfolio!</h3>
+        <div class="welcome_tekst">
           <p>
-            Hej og velkommen til min portfolio! Jeg er i gang med at søge
-            praktikplads til 4. semester som multimediedesigner og det vil
-            betyde enormt meget hvis du harr lyst til at kigge rundt på min
-            hjemmeside og få en føling af hvem jeg er som person og hvilke
-            kompetencer jeg indeholder. Du kan dykke ned i mit tidligere arbejde
-            og projekter, og se hvad jeg tidligere har beskæftiget mig med som
-            studerende på KEA og dermed kan tilbyde jeres arbejdsplads som jeres
-            praktikant. Tag et kig rundt og tøv endelig ikke med at tage kontakt
-            hvis jeg vækker en interesse hos jer!
+            Jeg er i gang med at søge praktikplads til 4. semester som
+            multimediedesigner og det vil betyde meget hvis du har lyst til at
+            kigge rundt på min hjemmeside og få en føling af hvem jeg er som
+            person og hvilke kompetencer jeg indeholder.
+          </p>
+          <p>
+            Du kan dykke ned i mit tidligere arbejde og projekter, og se hvad
+            jeg tidligere har beskæftiget mig med som studerende på KEA og
+            dermed kan tilbyde jeres arbejdsplads som jeres praktikant. Tag et
+            kig rundt og tøv endelig ikke med at tage kontakt, hvis jeg vækker
+            en interesse hos jer!
           </p>
         </div>
       </section>
@@ -110,7 +104,7 @@
       <!-- work sektion -->
       <section id="work">
         <div class="streg_efter_tekst">
-          <h1>work</h1>
+          <h2>work</h2>
           <img class="streg_img" src="img/streg.svg" alt="" />
         </div>
         <p class="p_intro">
@@ -120,8 +114,6 @@
       </section>
 
       <section class="projekter_wrapper">
-       
-       
         <!-- Teater Grob -->
         <div class="boks">
           <figure class="image_boks fade_in_1">
@@ -140,11 +132,47 @@
 
         <dialog class="modal" id="modal">
           <div class="kryds_titel_luk">
-          <h2>An interesting title</h2>
-          <button class="button close-button">X</button>
-        </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse nisi, laboriosam illum temporibus ipsam?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quo.</p>
+            <h2>Teater Grob</h2>
+            <button class="button close-button">X</button>
+          </div>
+          <a
+            class="modal_link"
+            href="http://denisedalvang.dk/teater_grob__wp/"
+            target="_blank"
+            >Se websitet her</a
+          >
+          <div>
+            <h3>Mine roller</h3>
+            <p>
+              Dette var et gruppeprojekt og mine roller dækkede primært
+              projektledelse hvor jeg agerede Scrum-master, jeg var med i
+              videoproduktionen samt redigering, colorgrading og color
+              correcting. Vi havde også til opgave at udarbejde bl.a.
+              målgruppeanalyse samt segmenter og personaer.
+            </p>
+            <h3>Opgavebeskrivelse</h3>
+            <p>
+              Projektet varede en måneds tid, hvor vi havde mulighed for at
+              kommunikere med kunden. Opgavebeskrivelsen lød på at der skulle
+              laves en kampagne for deres årskort i form af en kampagnevideo, og
+              hertil skulle der laves et kampagnesite som skulle promovere
+              dette.
+            </p>
+            <h3>Proces</h3>
+            <p>
+              Processen strakte sig over udarbejdelse af kampagnen, nyhedsbreve
+              og design af årskort, videoproduktion og redigering samt udvikle
+              websitet ved hjælp af CMS-systemet WordPress.
+            </p>
+            <div class="billeder_proces_work">
+              <img src="img/aarskort.png" alt="Årskort" />
+              <img src="img/persona1.png" alt="Årskort" />
+              <img src="img/some.png" alt="Årskort" />
+              <img src="img/styletile.png" alt="Årskort" />
+              <img src="img/segmenter.png" alt="Årskort" />
+              <img src="img/customer.png" alt="Årskort" />
+            </div>
+          </div>
         </dialog>
 
         <!-- MBN -->
@@ -163,14 +191,53 @@
           </figure>
         </div>
 
-
         <dialog class="modal" id="modal-1">
           <div class="kryds_titel_luk">
-          <h2>An interesting title</h2>
-          <button class="button close-button-1">X</button>
-        </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse nisi, laboriosam illum temporibus ipsam?</p>
-          <p>Test</p>
+            <h2>Made by Nicholas</h2>
+            <button class="button close-button-1">X</button>
+          </div>
+          <a
+            class="modal_link"
+            href="https://katjalevring.dk/kea/10_eksamensprojekt/made_by_nicholas/"
+            target="_blank"
+            >Se websitet her</a
+          >
+          <div>
+            <h3>Mine roller</h3>
+            <p>
+              Dette var mit eksamensprojekt på 2. semester og det er løst som
+              gruppearbejde. Mine roller dækkede over at agere Scrum-master, og
+              så varetog jeg alt udvikling indenfor frontend og backend, hvor
+              jeg arbejdede med WP REST API, opdaterede data og arbejdede med
+              Json og fetch. Samtidig havde jeg også en stor rolle i
+              rapportskrivning og var torvholder for mange punkter.
+            </p>
+            <h3>Opgavebeskrivelse</h3>
+            <p>
+              Vi havde til opgave at finde en virksomhed, og hjælpe dem med at
+              udvikle et website samt content til SoMe og en video. Projektet
+              strakte sig over en måneds tid, hvor vi dagligt var i kontakt med
+              vores kunde. Vi samarbejdede med Made By Nicholas, som er en
+              enmandsvirksomhed som laver lamper af genbrugsgenstande samt nye
+              materialer.
+            </p>
+            <h3>Proces</h3>
+            <p>
+              At skulle løse så mange opgaver på så kort tid var presset - og
+              derfor havde vi meget at se til! Hele processen var presset, da
+              der var mange ting på én gang. Dog delte vi processerne op i
+              videoproduktion, design, kodning, og rapportskrivning - og så var
+              det at starte fra en ende af!
+            </p>
+            <div class="billeder_proces_work">
+              <img src="img/bmc.png" alt="Årskort" />
+              <img src="img/businesscard-blaa-front.png" alt="Årskort" />
+              <img src="img/persona_mbn.png" alt="Årskort" />
+              <img src="img/tusindetak-hvid2.png" alt="Årskort" />
+              <img src="img/moodboard.png" alt="Årskort" />
+              <img src="img/cusomer_journey.png" alt="Årskort" />
+            </div>
+          </div>
         </dialog>
 
         <!-- Musikloftet -->
@@ -191,15 +258,18 @@
 
         <dialog class="modal" id="modal-2">
           <div class="kryds_titel_luk">
-          <h2>An interesting title</h2>
-          <button class="button close-button-2">X</button>
-        </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse nisi, laboriosam illum temporibus ipsam?</p>
+            <h2>An interesting title</h2>
+            <button class="button close-button-2">X</button>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse
+            nisi, laboriosam illum temporibus ipsam?
+          </p>
           <p>Test igen</p>
         </dialog>
 
         <!-- Typografi -->
-        <div class="boks">
+        <div class="boks_1">
           <figure class="image_boks fade_in_4">
             <div class="image_overlay slide-in-fwd-center">
               <h2 class="overskrift_boks">En Kant</h2>
@@ -216,15 +286,18 @@
 
         <dialog class="modal" id="modal-3">
           <div class="kryds_titel_luk">
-          <h2>An interesting title</h2>
-          <button class="button close-button-3">X</button>
-        </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse nisi, laboriosam illum temporibus ipsam?</p>
+            <h2>An interesting title</h2>
+            <button class="button close-button-3">X</button>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse
+            nisi, laboriosam illum temporibus ipsam?
+          </p>
           <p>Test igen igen</p>
         </dialog>
 
         <!-- Tidligere portfolio -->
-        <div class="boks">
+        <div class="boks_1">
           <figure class="image_boks fade_in_5">
             <div class="image_overlay slide-in-fwd-center">
               <h2 class="overskrift_boks">Tdiligere Portfolio</h2>
@@ -241,15 +314,18 @@
 
         <dialog class="modal" id="modal-4">
           <div class="kryds_titel_luk">
-          <h2>An interesting title</h2>
-          <button class="button close-button-4">X</button>
-        </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse nisi, laboriosam illum temporibus ipsam?</p>
+            <h2>An interesting title</h2>
+            <button class="button close-button-4">X</button>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse
+            nisi, laboriosam illum temporibus ipsam?
+          </p>
           <p>Test igen igen</p>
         </dialog>
 
         <!-- Animationsspil -->
-        <div class="boks">
+        <div class="boks_1">
           <figure class="image_boks fade_in_6">
             <div class="image_overlay slide-in-fwd-center">
               <h2 class="overskrift_boks">Animationsspil</h2>
@@ -266,10 +342,13 @@
 
         <dialog class="modal" id="modal-5">
           <div class="kryds_titel_luk">
-          <h2>An interesting title</h2>
-          <button class="button close-button-5">X</button>
-        </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse nisi, laboriosam illum temporibus ipsam?</p>
+            <h2>An interesting title</h2>
+            <button class="button close-button-5">X</button>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse
+            nisi, laboriosam illum temporibus ipsam?
+          </p>
           <p>Test igen igen igen</p>
         </dialog>
       </section>
@@ -278,36 +357,55 @@
       <!-- about sektion -->
       <section id="about">
         <div class="streg_efter_tekst">
-          <h1>about</h1>
+          <h2>about</h2>
           <img class="streg_img" src="img/streg.svg" alt="" />
         </div>
-            
-            <div class="about_grid">
-              <div>
-            <h2>Hej! Jeg hedder Katja</h2>
+        <h3>Hej! Jeg hedder Katja</h3>
+
+        <div class="about_grid">
+          <div>
             <p>
-              Sidder du med følelsen af at du lige har set portfolioet på jeres
-              nye praktikant og at jeg ville passe godt ind i jeres team? Så tøv
-              endelig ikke med at kontakt mig! Mine kontaktoplysninger er som
-              vist ude til højre, så hvis du sidder med nogle ubesvarede
-              spørgsmål eller en interesse, så kontakt mig enten på min mail
-              eller telefonisk. Jeg håber meget på at høre fra dig!
+              Jeg er 24 år og jeg læser multimediedesign på 3. semester på KEA
+              og er færdiguddannet til januar 2023. Jeg har boet i København i 4
+              års tid og er opvokset i Gilleleje. Jeg kommer fra en lille by,
+              hvor alle kender alle - så derfor ville jeg udvide mine horisonter
+              og min omgangskreds, og valgte at hive teltpløkkerne op og drage
+              mod storbyen. <br />
+              Jeg har altid haft en interesse for design, teknologi og udvikling
+              - dog har jeg ikke altid været sikker på hvordan jeg skulle
+              formidle og udtrykke mine ideer. Det får jeg lov til i København
+              og på KEA.
             </p>
           </div>
-            <img class="img_about" src="img/about_mig.png" alt="Billede af mig">
+          <div>
+            <p>
+              Uddannelsen berører mange områder, hvor interfacedesign og
+              webudvikling har været de centrale temaer i min undervisning og
+              samtidig de arbejdsområder, der interesser mig mest. Dette
+              fordyber vi os også i på valgfaget ”Digital Design”, dog synes jeg
+              alle aspekter indenfor vores uddannelse er interessante og derfor
+              er det også netop denne uddannelse som jeg har valgt, da jeg får
+              lov til at udfolde mig både personligt og fagligt. <br />
+              Som person er jeg humoristisk, nysgerrig, kreativ og positiv. Jeg
+              har altid haft en lyst for at arbejde og tilegne mig ny viden,
+              derfor kan jeg også håndtere flere og mange opgaver på en gang,
+              hvor jeg samtidig fungerer godt i grupper, men også besidder
+              ansvar og punktlighed til at arbejde selvstændigt.
+            </p>
           </div>
+          <img class="img_about" src="img/about_mig.png" alt="Billede af mig" />
         </div>
       </section>
 
       <!-- kompetence sektion -->
       <section class="kompetence_section">
         <div class="streg_efter_tekst">
-          <h2 class="speciel_h2">skills</h2>
+          <h2>skills</h2>
           <img class="streg_img" src="img/streg.svg" alt="" />
         </div>
         <div class="en_to_tre_kompetencer">
           <div class="slide-in-fwd-center_1">
-            <h2 class="tal_about">01</h2>
+            <h3 class="tal_about">01</h3>
             <h3>Interfacedesign</h3>
             <ul class="ul_about">
               <li>Designsystemer</li>
@@ -320,11 +418,16 @@
           </div>
 
           <div class="slide-in-fwd-center_2">
-            <h2 class="tal_about">02</h2>
+            <h3 class="tal_about">02</h3>
             <h3>Design udvikling</h3>
             <ul class="ul_about">
-              <li>Kode ved brug af HTML, CSS, JavaScript, Tailwind og Svelte</li>
-              <li>Adobe Creative Cloud: Illustrator, InDesign, Xd, Photoshop og Premiere Pro</li>
+              <li>
+                Kode ved brug af HTML, CSS, JavaScript, Tailwind og Svelte
+              </li>
+              <li>
+                Adobe Creative Cloud: Illustrator, InDesign, Xd, Photoshop og
+                Premiere Pro
+              </li>
               <li>Prototype, wireframe, mockup, moodboard og styletile</li>
               <li>Figma</li>
               <li>Brug af JSON</li>
@@ -334,7 +437,7 @@
           </div>
 
           <div class="slide-in-fwd-center_3">
-            <h2 class="tal_about">03</h2>
+            <h3 class="tal_about">03</h3>
             <h3>Kommunikation</h3>
             <ul class="ul_about">
               <li>Informationsartitektur og systemer</li>
@@ -347,7 +450,7 @@
           </div>
 
           <div class="slide-in-fwd-center_4">
-            <h2 class="tal_about">04</h2>
+            <h3 class="tal_about">04</h3>
             <h3>Projektstyrelse</h3>
             <ul class="ul_about">
               <li>Scrum</li>
@@ -356,19 +459,20 @@
               <li>Double Diamond</li>
             </ul>
           </div>
-
         </div>
       </section>
 
       <!-- cv sektion -->
       <section>
         <div class="streg_efter_tekst">
-          <h2 class="speciel_h2">resume</h2>
+          <h2>resume</h2>
           <img class="streg_img" src="img/streg.svg" alt="" />
         </div>
         <p>
           Du kan downloade mit CV
-          <a class="cv_her_link" href="kontakt.html" target="_blank">her.</a>
+          <a class="cv_her_link" href="andet/cv-dansk.pdf" target="_blank"
+            >her.</a
+          >
         </p>
       </section>
 
@@ -376,13 +480,13 @@
       <!-- contact sektion -->
       <section id="contact">
         <div class="streg_efter_tekst">
-          <h1>contact</h1>
+          <h2>contact</h2>
           <img class="streg_img" src="img/streg.svg" alt="" />
         </div>
 
         <div class="praktikant_tekst">
           <div>
-            <h2>Kunne jeg måske være jeres nye praktikant?</h2>
+            <h3>Kunne jeg måske være jeres nye praktikant?</h3>
             <p>
               Sidder du med følelsen af at du lige har set portfolioet på jeres
               nye praktikant og at jeg ville passe godt ind i jeres team? Så tøv
@@ -395,24 +499,20 @@
 
           <div class="mail_mobil_div">
             <div>
-              <h3>E-mail</h3>
+              <h4>E-mail</h4>
               <p>
                 <a href="mailto:someone@example.com">katjakl@msn.com</a>
               </p>
             </div>
 
             <div>
-              <h3>Mobilnummer</h3>
+              <h4>Mobilnummer</h4>
               <p>+45 30 27 79 27</p>
             </div>
           </div>
         </div>
       </section>
-
     </main>
-
-
-
 
     <!-- footer -->
     <footer id="footer">
@@ -420,7 +520,7 @@
         <ul class="footer_div">
           <!-- kontakt og cv footer -->
           <li>
-            <a href="kontakt.html">contact</a>
+            <a href="index.html#contact">contact</a>
           </li>
           <li>
             <a href="andet/cv-dansk.pdf" target="_blank">download resume</a>
@@ -447,10 +547,6 @@
         </div>
       </section>
     </footer>
-
-
-
-
 
     <!-- script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
