@@ -380,6 +380,7 @@ footer {
   font-family: var(--h3Text);
   font-size: 1.5rem;
   margin-inline: -3rem;
+  font-weight: bold;
 }
 
 .navn_hero {
@@ -750,7 +751,7 @@ figure {
   /* WORK */
   .projekter_wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin-top: 4rem;
   }
@@ -812,7 +813,6 @@ figure {
     place-self: center;
     margin-left: 25rem;
     margin-bottom: 17rem;
-    font-weight: bold;
   }
 
   .portfolio_titel {
@@ -1211,7 +1211,7 @@ figure {
   }
 
   .navn_hero {
-    margin-left: 9rem;
+    margin-left: 11rem;
   }
 
   .navn_hero {
