@@ -812,6 +812,7 @@ figure {
     place-self: center;
     margin-left: 25rem;
     margin-bottom: 17rem;
+    font-weight: bold;
   }
 
   .portfolio_titel {
@@ -1210,7 +1211,7 @@ figure {
   }
 
   .navn_hero {
-    margin-left: 10rem;
+    margin-left: 9rem;
   }
 
   .navn_hero {
