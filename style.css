@@ -820,6 +820,7 @@ figure {
     display: block;
     margin-top: 6rem;
     margin-left: -2rem;
+    font-weight: bold;
   }
 
   .portfolio_titel p {
