@@ -590,6 +590,12 @@ figure {
     gap: 2rem;
   }
 
+  .modal {
+    max-width: 50ch;
+    max-height: 75ch;
+    margin-right: auto;
+  }
+
   .projekter_wrapper .boks {
     margin-block: 0rem;
   }
@@ -748,6 +754,11 @@ figure {
     gap: 2rem;
     margin-top: 4rem;
   }
+  .modal {
+    max-width: 70ch;
+    max-height: 75ch;
+    margin-right: auto;
+  }
 }
 
 /*** LILLE DEKSTOP ***/
@@ -897,7 +908,7 @@ figure {
 
   /********** POP UP DESK ************/
   .modal {
-    max-width: 150ch;
+    max-width: 80ch;
     max-height: 75ch;
     margin-right: auto;
   }
@@ -1244,6 +1255,11 @@ figure {
   }
 
   /**** WORK ***/
+  .modal {
+    max-width: 100ch;
+    max-height: 75ch;
+    margin-right: auto;
+  }
 
   /**** CONTACT  ****/
   .praktikant_tekst p {
@@ -1304,5 +1320,11 @@ figure {
 
   .intro_forside h3 {
     padding-right: 2rem;
+  }
+
+  /*** WORK ***/
+  .modal {
+    max-width: 1300ch;
+    margin-right: auto;
   }
 }
