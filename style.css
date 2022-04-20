@@ -44,12 +44,9 @@ video {
 h1 {
   font-family: var(--h1Text);
   color: var(--primary);
-  font-size: clamp(
-    2.5rem,
-    1.4600000000000002rem + 0.6999999999999997vw,
-    2.7rem
-  );
+  font-size: clamp(2.5rem, 2.2rem + 1.5vw, 4rem);
   letter-spacing: var(--space-xxxs);
+  line-height: 2.5rem;
 }
 
 h2 {
@@ -108,6 +105,58 @@ li {
   line-height: var(--space-xl);
   color: var(--primary);
   font-size: clamp(1.2rem, 0.86rem + 0.2000000000000001vw, 1.6rem);
+}
+
+/*** POPUP ***/
+.modal {
+  margin-right: 30rem;
+  max-width: 30ch;
+  max-height: 50ch;
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+  z-index: 100;
+}
+
+.modal::backdrop {
+  background: rgb(0 0 0 / 0.6);
+}
+
+.open-button,
+.open-button-1,
+.open-button-2,
+.open-button-3,
+.open-button-4,
+.open-button-5 {
+  color: var(--secondary);
+  cursor: pointer;
+}
+.open-button:hover,
+.open-button-1:hover,
+.open-button-2:hover,
+.open-button-3:hover,
+.open-button-4:hover,
+.open-button-5:hover {
+  text-decoration: underline;
+}
+.close-button,
+.close-button-1,
+.close-button-2,
+.close-button-3,
+.close-button-4,
+.close-button-5 {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  text-align: end;
+}
+.kryds_titel_luk {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal_link a {
+  color: var(--primary);
+  font-family: var(--anchor);
 }
 
 /*** GENERELT I MOBILE ***/
@@ -396,6 +445,10 @@ footer {
 }
 
 /*** WORK ***/
+.image_boks {
+  margin-block: 2rem;
+}
+
 figure {
   display: grid;
   margin: 0rem;
@@ -405,24 +458,39 @@ figure {
   grid-area: 1/1;
 }
 
-.image_overlay {
+.image_overlay,
+.image_overlay_1,
+.image_overlay_2,
+.image_overlay_3,
+.image_overlay_4,
+.image_overlay_5 {
   grid-area: 1/1;
   text-align: center;
   display: grid;
   place-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
-/* figure {
-  margin-inline: 0rem;
-} */
+.kompetencer_boks {
+  color: var(--secondary);
+}
+
+.overskrift_boks,
+.kompetencer_boks,
+.button {
+  z-index: 1;
+}
 
 .projekter_wrapper img {
   box-shadow: 0 8px 10px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
 }
-
+/* 
 .projekter_wrapper .boks {
   margin-block: 3rem;
-}
+} */
 
 .overskrift_boks {
   margin-bottom: 0rem;
@@ -776,7 +844,6 @@ figure {
   }
 
   /**** ABOUT ***/
-
   .about_grid {
     gap: 3rem;
   }
@@ -799,12 +866,27 @@ figure {
     grid-area: 1/1;
   }
 
-  .image_overlay {
+  .image_overlay,
+  .image_overlay_1,
+  .image_overlay_2,
+  .image_overlay_3,
+  .image_overlay_4,
+  .image_overlay_5 {
     grid-area: 1/1;
     opacity: 0;
     text-align: center;
     display: grid;
     place-content: center;
+  }
+
+  .kompetencer_boks {
+    color: var(--secondary);
+  }
+
+  .overskrift_boks,
+  .kompetencer_boks,
+  .button {
+    z-index: 1;
   }
 
   .overskrift_boks {
@@ -813,53 +895,11 @@ figure {
     margin-block: 0rem;
   }
 
-  /********** POP UP ************/
+  /********** POP UP DESK ************/
   .modal {
-    /* padding: 1em; */
     max-width: 150ch;
     max-height: 75ch;
-    border: 0;
-    box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
-  }
-  .modal::backdrop {
-    background: rgb(0 0 0 / 0.6);
-  }
-  .open-button,
-  .open-button-1,
-  .open-button-2,
-  .open-button-3,
-  .open-button-4,
-  .open-button-5 {
-    color: var(--secondary);
-    cursor: pointer;
-  }
-  .open-button:hover,
-  .open-button-1:hover,
-  .open-button-2:hover,
-  .open-button-3:hover,
-  .open-button-4:hover,
-  .open-button-5:hover {
-    text-decoration: underline;
-  }
-  .close-button,
-  .close-button-1,
-  .close-button-2,
-  .close-button-3,
-  .close-button-4,
-  .close-button-5 {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    text-align: end;
-  }
-  .kryds_titel_luk {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .modal_link a {
-    color: var(--primary);
-    font-family: var(--anchor);
+    margin-right: auto;
   }
 
   .billeder_proces_work {
@@ -901,11 +941,22 @@ figure {
     text-decoration: underline;
   }
 
-  .image_overlay:hover {
+  .image_overlay:hover,
+  .image_overlay_1:hover,
+  .image_overlay_2:hover,
+  .image_overlay_3:hover,
+  .image_overlay_4:hover,
+  .image_overlay_5:hover {
     background: rgba(0, 0, 0, 0.8);
     width: 100%;
     height: 100%;
     opacity: 1;
+  }
+
+  .overskrift_boks,
+  .kompetencer_boks,
+  .button {
+    z-index: 0;
   }
 
   .projekter_wrapper img {
