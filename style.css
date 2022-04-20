@@ -755,6 +755,7 @@ figure {
     gap: 2rem;
     margin-top: 4rem;
   }
+
   .modal {
     max-width: 70ch;
     max-height: 75ch;
@@ -869,6 +870,10 @@ figure {
   }
 
   /**** WORK ***/
+  .projekter_wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   figure {
     display: grid;
     margin: 0rem;
